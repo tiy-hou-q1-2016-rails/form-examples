@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #2C3E50;
+  padding: 15px;
+  a {
+    flex: 1;
+    margin: 0 30px;
+    color: #ffffff;
+    &:hover {
+      text-decoration: none;
+      color: #F1C40F;
+    }
+  }
+}
+
+
+body {
+  color: #666666;
+}

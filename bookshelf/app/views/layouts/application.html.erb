@@ -7,8 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+<header>
+  <nav>
+    <%= link_to "Books", "/books" %>
+    <%= link_to "New Book", "/books/new" %>
+    <%= link_to "Authors", "/authors" %>
+    <%= link_to "New Author", "/authors/new" %>
+  </nav>
+</header>
+<div class="container">
+  <%= yield %>
+  
+</div>
 
 </body>
 </html>

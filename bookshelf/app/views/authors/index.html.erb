@@ -1,0 +1,33 @@
+<h1>Authors</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        Last Name
+      </th>
+      <th>
+        First Name
+      </th>
+      <th>
+        Details
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @authors.each do |author| %>
+      <tr>
+        <td>
+          <%= author.first_name %>
+        </td>
+        <td>
+          <%= author.last_name %>
+        </td>
+        <td>
+          <%= link_to "View Details", "/authors/#{author.id}" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
