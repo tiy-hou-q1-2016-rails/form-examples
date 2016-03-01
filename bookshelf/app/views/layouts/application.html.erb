@@ -9,15 +9,16 @@
 <body>
 <header>
   <nav>
-    <%= link_to "Books", "/books" %>
-    <%= link_to "New Book", "/books/new" %>
-    <%= link_to "Authors", "/authors" %>
-    <%= link_to "New Author", "/authors/new" %>
+    <%= link_to "Home", root_path %>
+    <%= link_to "Books", books_path %>
+    <%= link_to "New Book", new_book_path %>
+    <%= link_to "Authors", authors_path %>
+    <%= link_to "New Author", new_author_path %>
   </nav>
 </header>
 <div class="container">
   <%= yield %>
-  
+
 </div>
 
 </body>
